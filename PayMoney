@@ -1,0 +1,32 @@
+package com.lab2.practice1;
+import java.util.Scanner;
+public class PayMoney {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the size of transaction array: ");
+		int size = scan.nextInt();
+		int arr[] = new int[size];
+		System.out.println("Enter the value of array: ");
+		for(int i=0;i<size;i++)
+		{
+			arr[i]=scan.nextInt();
+		}
+		System.out.println("Enter the value of target");
+		int target = scan.nextInt();
+		int sum=0, j=0;
+		while(sum<target && j<size)
+		{
+			sum=sum+arr[j];
+			j++;
+		}
+		if(sum<target)
+		{
+			System.out.println("Given target is not achieved");
+		}
+		else 
+		{
+			System.out.println("Target achieved after"+ j +"transactions");
+		}
+		}
+	}
+
