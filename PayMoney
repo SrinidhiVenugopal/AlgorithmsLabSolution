@@ -11,7 +11,7 @@ public class PayMoney {
 		{
 			arr[i]=scan.nextInt();
 		}
-		System.out.println("Enter the value of target");
+		System.out.println("Enter the total no of targets that needs to be achieved");
 		int target = scan.nextInt();
 		int sum=0, j=0;
 		while(sum<target && j<size)
